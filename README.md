@@ -70,7 +70,6 @@
 
 以下代码展示了如何使用 Python 加载数据，并将其封装为适合深度学习框架（如 **PyTorch**）使用的数据迭代器。
 
-### 1. 基础数据加载
 ```python
 import pickle
 
@@ -86,7 +85,7 @@ patient_visits = [dataset.samples[i] for i in visit_indices]
 
 print(f"患者 {first_patient_id} 共有 {len(patient_visits)} 次就诊记录。")
 
-### 2. PyTorch Dataset 封装示例 (以药物推荐为例)
+### PyTorch Dataset 封装示例 (以药物推荐为例)
 import torch
 from torch.utils.data import Dataset, DataLoader
 
